@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ImageGalleryItem = ({ webformatURL, largeImageURL }) => {
+const ImageGalleryItem = ({  alt , onClick, largeImageURL }) => {
   return (
-    <li className="gallery-item">
-      <img  src={webformatURL} alt="" data-large={largeImageURL} />
+    <li className="gallery-item" onClick = {onClick}>
+      <img  src={largeImageURL} alt={alt} />
     </li>
   );
 };
